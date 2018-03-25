@@ -10,7 +10,9 @@ namespace Azure.Storage.Table.GetOrCreateTableReference
         /// <summary>Returns a reference of a new or existing Microsoft Azure CloudTable using the given connection string and table name</summary>
         public static async Task<CloudTable> GetOrCreateAzureTable(string connectionString, string tableName)
         {
-            var table = TableReference(connectionString, tableName); await table.CreateIfNotExistsAsync(); return table;
+var table = TableReference(connectionString, tableName);
+await table.CreateIfNotExistsAsync();
+return table;;
         }
     }
 }
