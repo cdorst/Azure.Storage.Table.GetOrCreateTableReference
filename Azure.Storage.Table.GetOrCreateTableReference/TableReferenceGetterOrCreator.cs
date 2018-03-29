@@ -15,7 +15,7 @@ namespace Azure.Storage.Table.GetOrCreateTableReference
         {
             var table = TableReference(connectionString, tableName);
             await table.CreateIfNotExistsAsync();
-            return table;;
+            return table;
         }
     }
 }
